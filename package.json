@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Continious Deployment with Github Actions, DockerHub",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest"
   },
+  "type": "module",
   "dependencies": {
     "express": "^4.17.1"
   },
